@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #040812;
+  --color-brand-secondary: #0A0E1A;
+  --color-brand-cyan: #00D4FF;
+  --color-brand-teal: #00FFB3;
+  --color-brand-red: #FF3B3B;
+  --color-brand-amber: #FFB347;
+  --color-brand-green: #00FF88;
+
+  --color-text-primary: #F0F4FF;
+  --color-text-secondary: #8892A4;
+
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-navy);
+    color: var(--color-text-primary);
+    font-family: var(--font-dm);
+    overflow-x: hidden;
+  }
+}
+
+/* UI Utilities */
+.glass-card {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.glow-red {
+  box-shadow: 0 0 20px rgba(255, 59, 59, 0.4);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-cyan);
+  border-radius: 4px;
+}
+
+/* Custom Animations */
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 1; border-color: rgba(0, 212, 255, 1); }
+  100% { transform: scale(1.5); opacity: 0; border-color: rgba(0, 212, 255, 0); }
+}
+
+.animate-ripple {
+  animation: ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 59, 59, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 59, 59, 0); }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(0, 212, 255, 0.1) 50%, rgba(255,255,255,0.03) 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+.active-scale:active {
+  transform: scale(0.98);
+}
+
+@layer utilities {
+  .font-orbitron {
+    font-family: var(--font-inter), "Inter", sans-serif !important;
+  }
+}

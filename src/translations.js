@@ -1,0 +1,53 @@
+export const translations = {
+  'English': {
+    'nav.dashboard': 'Dashboard',
+    'nav.map': 'Live Map',
+    'nav.report': 'Report Flood',
+    'nav.routes': 'Safe Routes',
+    'nav.emergency': 'Emergency',
+    'nav.profile': 'My Profile',
+    'title.predict': 'Will My Area Flood?',
+    'title.analytics': 'Flood History and Statistics',
+    'title.report': 'Report a Flood Near You',
+    'title.routes': 'Find a Safe Road',
+    'title.emergency': 'I Need Help Now',
+    'title.dashboard': 'Flood Risk Detected',
+    'btn.submit': 'Submit',
+    'btn.cancel': 'Cancel',
+    'btn.download': 'Download Report'
+  },
+  'हिंदी (Hindi)': {
+    'nav.dashboard': 'डैशबोर्ड',
+    'nav.map': 'लाइव मैप',
+    'nav.report': 'बाढ़ रिपोर्ट करें',
+    'nav.routes': 'सुरक्षित मार्ग',
+    'nav.emergency': 'आपातकाल',
+    'nav.profile': 'मेरी प्रोफ़ाइल',
+    'title.predict': 'क्या मेरे क्षेत्र में बाढ़ आएगी?',
+    'title.analytics': 'बाढ़ का इतिहास',
+    'title.report': 'बाढ़ की रिपोर्ट करें',
+    'title.routes': 'सुरक्षित सड़क खोजें',
+    'title.emergency': 'मुझे अभी मदद चाहिए',
+    'title.dashboard': 'बाढ़ का खतरा पहचाना गया',
+    'btn.submit': 'जमा करें',
+    'btn.cancel': 'रद्द करें',
+    'btn.download': 'रिपोर्ट डाउनलोड करें'
+  },
+  'తెలుగు (Telugu)': {
+    'nav.dashboard': 'డాష్‌బోర్డ్',
+    'nav.map': 'లైవ్ మ్యాప్',
+    'nav.report': 'వరదను నివేదించండి',
+    'nav.routes': 'సురక్షిత మార్గాలు',
+    'nav.emergency': 'అత్యవసర',
+    'nav.profile': 'నా ప్రొఫైల్',
+    'title.predict': 'నా ప్రాంతంలో వరద వస్తుందా?',
+    'title.analytics': 'వరద చరిత్ర',
+    'title.report': 'వరదను నివేదించండి',
+    'title.routes': 'సురక్షిత రవాణా కనుగొనండి',
+    'title.emergency': 'నాకు ఏ సహాయం కావాలి',
+    'title.dashboard': 'వరద ముప్పు కనుగొనబడింది',
+    'btn.submit': 'సమర్పించండి',
+    'btn.cancel': 'రద్దు చేయండి',
+    'btn.download': 'డౌన్‌లోడ్ చేయండి'
+  }
+};
